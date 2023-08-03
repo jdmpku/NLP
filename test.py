@@ -1,3 +1,9 @@
-import numpy as np
+import torch.nn as nn
 
-print(np.eye(8)[5])
+vob = 5,
+dim = 2
+a = nn.Linear(2,5,bias = False)
+print(a.weight.shape)
+
+b = nn.Embedding(5,2)
+print(b.weight.shape)
